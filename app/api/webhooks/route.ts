@@ -5,12 +5,12 @@ import { NextResponse } from 'next/server';
 
 import { headers } from 'next/headers';
 
-import { stripe } from '@/libs/stripe';
+import { stripe } from '@/hooks/libs/stripe';
 import {
   upsertProductRecord,
   upsertPriceRecord,
   manageSubscriptionStatusChange,
-} from '@/libs/supabaseAdmin';
+} from '@/hooks/libs/supabaseAdmin';
 
 const relevantEvents = new Set([
   'product.created',

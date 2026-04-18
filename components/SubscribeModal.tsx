@@ -4,8 +4,8 @@ import { useState } from 'react';
 
 import { toast } from 'react-hot-toast';
 
-import { postData } from '@/libs/helpers';
-import { getStripe } from '@/libs/stripeClient';
+import { postData } from '@/hooks/libs/helpers';
+import { getStripe } from '@/hooks/libs/stripeClient';
 
 import { useUser } from '@/hooks/useUser';
 

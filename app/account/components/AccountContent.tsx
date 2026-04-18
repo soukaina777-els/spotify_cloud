@@ -11,7 +11,7 @@ import { Button } from '@/components/Button';
 import { useSubscribeModal } from '@/hooks/useSubscribeModal';
 import { useUser } from '@/hooks/useUser';
 
-import { postData } from '@/libs/helpers';
+import { postData } from '@/hooks/libs/helpers';
 
 export const AccountContent = () => {
   const router = useRouter();

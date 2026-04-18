@@ -3,9 +3,9 @@ import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 
-import { stripe } from '@/libs/stripe';
-import { getURL } from '@/libs/helpers';
-import { createOrRetrieveCustomer } from '@/libs/supabaseAdmin';
+import { stripe } from '@/hooks/libs/stripe';
+import { getURL } from '@/hooks/libs/helpers';
+import { createOrRetrieveCustomer } from '@/hooks/libs/supabaseAdmin';
 
 export async function POST() {
   try {
